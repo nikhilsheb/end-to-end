@@ -24,7 +24,7 @@ pipeline {
             steps {
                 withDockerRegistry([credentialsId: 'docker-hub-creds', url: 'https://index.docker.io/v1/']) {
                     sh 'docker tag demo-app:latest <your-docker-hub-username>/demo-app:latest'
-                    sh 'docker push <your-docker-hub-username>/demo-app:latest'
+                    sh 'docker push niklearn1414/demo-app:latest'
                 }
             }
         }
